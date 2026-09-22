@@ -392,7 +392,7 @@ html.js.motore-ko #nomotore{display:block}
       }
       if (s.cad === "noncomplessa") return { esito:"pci", c:"IIb", l:"C", testo:"CAD non complessa: PCI, poi rivalutazione della MR, poi TEER si può considerare nel sintomatico con SMR ventricolare severa cronica" };
       if (s.cad === "") return { esito:null, perche:"serve lo stato coronarico (coronarografia raccomandata nella SMR ventricolare severa)" };
-      if (!ott) return { esito:"ottimizza", testo:"Prima di ogni intervento: GDMT alla massima dose tollerata, titolata <b>entro 6 settimane</b>, e CRT se LVEF ≤35% e QRS largo; circa il 40% migliora di almeno un grado dopo 1–3 mesi" };
+      if (!ott) return { esito:"ottimizza", testo:"Prima di ogni intervento: GDMT alla massima dose tollerata, titolata <b>entro 6 settimane</b>, e CRT se LVEF ≤35% e QRS largo; circa il 40% migliora di gravità dopo 1–3 mesi" };
       if (s.pers === "") return { esito:null, perche:"dopo l'ottimizzazione: sintomi e SMR severa persistono?" };
       if (s.pers === "no") return { esito:"medica", testo:"Terapia medica e follow-up" };
       var e = esitoCriteri(criteri(s));
